@@ -1,0 +1,18 @@
+.toggle-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.toggle-button {
+    flex: 1;
+    margin: 5px;
+    min-width: 200px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .toggle-button {
+        min-width: 100%;
+    }
+}

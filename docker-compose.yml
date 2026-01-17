@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend_monitoreo
+    container_name: monitoreo_pis_backend
+    ports:
+      - "3000:3000"  # Exponer el puerto 3000 del contenedor en el puerto 3000 del host
+    networks:
+      - monitoreo_network
+
+  frontend:
+    build:
+      context: ./frontend_monitoreo
+    container_name: monitoreo_pis_frontend
+    ports:
+      - "3001:3000"  # Exponer el puerto 3000 del contenedor en el puerto 3001 del host
+    depends_on:
+      - backend
+    networks:
+      - monitoreo_network
+
+networks:
+  monitoreo_network:
+    driver: bridge

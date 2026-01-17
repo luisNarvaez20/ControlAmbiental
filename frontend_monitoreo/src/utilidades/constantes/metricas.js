@@ -1,0 +1,20 @@
+export const TEMPERATURA_CRITICA = 28;
+export const HUMEDAD_CRITICA_ALTA = 70;
+export const HUMEDAD_CRITICA_BAJA = 40;
+export const CO2_CRITICO = 800;
+
+export const TEMPERATURA_DEFICIENTE_BAJA = 14;
+export const TEMPERATURA_DEFICIENTE_ALTA = 28;
+export const HUMEDAD_DEFICIENTE = 60;
+export const CO2_DEFICIENTE = 600;
+
+export const TEMPERATURA_ACEPTABLE_BAJA = 14;
+export const TEMPERATURA_ACEPTABLE_ALTA = 26;
+export const HUMEDAD_ACEPTABLE = 50;
+export const CO2_ACEPTABLE = 400;
+
+export const TEMPERATURA_OPTIMA_BAJA = 16;
+export const TEMPERATURA_OPTIMA_ALTA = 24;
+export const HUMEDAD_OPTIMA_BAJA = 40;
+export const HUMEDAD_OPTIMA_ALTA = 50;
+export const CO2_OPTIMO = 0;
